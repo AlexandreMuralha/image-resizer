@@ -13,30 +13,53 @@
 </head>
 <body>
 
-  <div id="div1">
-    <h3>Online Image Reziser</h3>
+<container>
+  <div id="div-1">
+    <h1>Image Resizer</h1>
   </div>
 
   <div id="div2">
-    <canvas id="resized"></canvas>
+    <div id="canvas-div">
+      <canvas id="resized"></canvas>
+    </div>
+
+    <div id="file_name"></div>
   </div>
   
 
   <div id="div3">
-      <button id="select-image">
-        <input type="file" id="photo-file" > Open Image
-      </button>
+
     
-      <input type="range" min="1" max="100" value="100" id="slider1" class="slider">
-      <label id="slider_value_label"> 100% of original size</label>
-  
-      <input type="range" min="1" max="10" value="8" id="slider_quality" class="slider">
-      <label id="slider_quality_label">Quality: 8</label>
-   
-      <button id="download_button">Download</button>
+      <button id="select-image">
+        <input type="file" id="photo-file" > Open Image ↑
+      </button>
+
+
   </div>
 
+  <div id="div4">
+
+    
+
+    <input type="range" min="1" max="100" value="100" id="slider1" class="slider">
+    <label id="slider_value_label"> 100% of original size</label>
+
+    <input type="range" min="1" max="10" value="8" id="slider_quality" class="slider">
+    <label id="slider_quality_label">Quality: 8</label>
+
+    
+  </div>
   
+  <div id="div5">
+    <button id="download_button">Download ↓ </button>
+    
+  </div>
+
+  <div id="div6">
+    <h3>Made by </h3>
+    <!-- <div id="output_label"></div> -->
+  </div>
+</container>
 
 <script src="index.js"></script>
 </body>

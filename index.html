@@ -5,62 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <title>Image Resizer</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
-<container>
-  <div id="div-1">
-    <h1>Image Resizer</h1>
-  </div>
-
-  <div id="div2">
-    <div id="canvas-div">
-      <canvas id="resized"></canvas>
+  <grid-container>
+    <div id="div-1">
+      <h1>Image Resizer</h1>
     </div>
 
-    <div id="file_name"></div>
-  </div>
-  
-
-  <div id="div3">
-
+    <div id="div-2">
+      <div id="canvas-div">
+        <canvas id="resized-canvas"></canvas>
+      </div>
+      <div id="file-name"></div>
+    </div>
     
+    <div id="div-3">
       <button id="select-image">
-        <input type="file" id="photo-file" > Open Image ↑
+          <input type="file" id="photo-file" > Open Image ↑
       </button>
+    </div>
 
-
-  </div>
-
-  <div id="div4">
-
+    <div id="div-4">
+      <input type="range" min="1" max="100" value="100" id="slider-size" class="slider">
+      <label id="slider-value-label"> 100% of original size</label>
+      <input type="range" min="1" max="10" value="8" id="slider-quality" class="slider">
+      <label id="slider-quality-label">Quality: 8</label>
+    </div>
     
+    <div id="div-5">
+      <button id="download-button">Download ↓ </button>
+    </div>
 
-    <input type="range" min="1" max="100" value="100" id="slider1" class="slider">
-    <label id="slider_value_label"> 100% of original size</label>
-
-    <input type="range" min="1" max="10" value="8" id="slider_quality" class="slider">
-    <label id="slider_quality_label">Quality: 8</label>
-
-    
-  </div>
-  
-  <div id="div5">
-    <button id="download_button">Download ↓ </button>
-    
-  </div>
-
-  <div id="div6">
-    <h3>Made by </h3>
-    <!-- <div id="output_label"></div> -->
-  </div>
-</container>
-
+    <div id="div-6">
+      <h3>Made by </h3>
+    </div>
+  </grid-container>
 <script src="index.js"></script>
 </body>
 </html>

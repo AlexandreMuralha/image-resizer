@@ -9,7 +9,6 @@ grid-container {
   border: 0.5rem solid black;
 
   min-height: 100vh;
-  max-width: 100vh;
 
   font-family: 'Roboto', sans-serif;
   font-weight: 700;

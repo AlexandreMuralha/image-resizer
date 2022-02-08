@@ -5,10 +5,10 @@ grid-container {
 
   margin: auto;
   margin-top: 1rem;
-  width: 80vh;
+  max-width: 80vh;
   border: 0.5rem solid black;
 
-  min-height: 100vh;
+  min-height: 80vh;
 
   font-family: 'Roboto', sans-serif;
   font-weight: 700;

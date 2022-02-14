@@ -5,6 +5,7 @@ grid-container {
 
   margin: auto;
   margin-top: 1rem;
+ 
   max-width: 80vh;
   border: 0.5rem solid black;
 
@@ -14,6 +15,7 @@ grid-container {
   font-weight: 700;
   font-size: 1rem;
   box-shadow: 8px 10px;
+  box-sizing: border-box;
 }
 
 button {
